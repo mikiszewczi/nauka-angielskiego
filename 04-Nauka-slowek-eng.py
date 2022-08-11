@@ -1,23 +1,27 @@
 import json
 import sys
+import random
 
 points = 0
 
-def game_rules(rules):
-    print("Zasdady: ")
+def game_rules():
+    print("\nZasdady: ")
     print("odpowiedzi podawaj używając tylko małych liter,")
     print("Zbieraj punkty i rywalizuj,")
-    print("Baw się dobrze i naucz się jak najwięcej! :)")
-    rules = input("Akceptujesz zasady gry? tak / nie: ")
+    print("Baw się dobrze i naucz się jak najwięcej! :)\n")
 
-    if rules == "tak":
-        print("Powodzenia!")
-    elif rules == "nie":
-        print("Przez brak akceptacji reguł, gra zakończona.")
-        sys.exit(0)
-    else:
-        print("Nieprawidłowa odpowiedź. Podaj odpowiedź tak lub nie.")
-        return
+    rules = ""
+    while rules not in ["tak", "nie"]:
+        rules = input("Akceptujesz zasady gry? tak / nie: ")
+
+        if rules == "tak":
+            print("\nPowodzenia!")
+            print("----------------------------------------------------")
+        elif rules == "nie":
+            print("\nPrzez brak akceptacji reguł, gra zakończona.")
+            sys.exit(0)
+        else:
+            print("Nieprawidłowa odpowiedź. Podaj odpowiedź tak lub nie.")
 
 def show_question(question):
     global points
@@ -30,17 +34,18 @@ def show_question(question):
 
     if answer == question["odpowiedź"]:
         points += 1
-        print("To prawidłowa odpowiedź, brawo! Masz już", points, "punktów.")
+        print("\nTo prawidłowa odpowiedź, brawo! Masz już", points, "punktów.")
+        print("----------------------------------------------------")
     else:
         points -= 1
-        print("Niestety to zła odpowiedź. Prawidłowa odpowiedź to " + question["odpowiedź"] + ". Masz już " + str(points) +".")
+        print("\nNiestety to zła odpowiedź. Prawidłowa odpowiedź to " + question["odpowiedź"] + ". Masz już " + str(points) +".")
+        print("----------------------------------------------------")
 
 with open("nauka-eng.json", encoding = "utf-8") as json_file:
     questions = json.load(json_file)
-    print(questions)
+    game_rules()
 
     for i in range(0, len(questions)):
         show_question(questions[i])
 
-print()
-print("Koniec gry, zdobyta liczba punktów to " + str(points) + ".")
+print("\nKoniec gry, zdobyta liczba punktów to " + str(points) + ".")
