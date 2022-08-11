@@ -1,0 +1,70 @@
+[
+    {
+        "pytanie": "dojrzały (osoba/zachowanie)",
+        "odpowiedź": "mature"
+    },
+    {
+        "pytanie": "odpowiedzialny (osoba/zachowanie)",
+        "odpowiedź": "responsible"
+    },
+    {
+        "pytanie": "interesariusz, partner (w biznesie)",
+        "odpowiedź": "stakeholder"
+    },
+    {
+        "pytanie": "akcjonariusz, udziałowiec",
+        "odpowiedź": "shareholder"
+    },
+    {
+        "pytanie": "wkład, udział",
+        "odpowiedź": "input"
+    },
+    {
+        "pytanie": "produkcja, wyniki pracy",
+        "odpowiedź": "output"
+    },
+    {
+        "pytanie": "zajmować się, podejmować",
+        "odpowiedź": "engage"
+    },
+    {
+        "pytanie": "pożytek, użyteczność",
+        "odpowiedź": "utility"
+    },
+    {
+        "pytanie": "zmienny (skłonny do zmiany)",
+        "odpowiedź": "variable"
+    },
+    {
+        "pytanie": "świadomy (czegoś)",
+        "odpowiedź": "conscious"
+    },
+    {
+        "pytanie": "solidny, niezawodny, wiarygodny, rzetelny, spolegliwy, godny zaufania",
+        "odpowiedź": "reliable"
+    },
+    {
+        "pytanie": "wygoda, zaleta, dogodność",
+        "odpowiedź": "convenience"
+    },
+    {
+        "pytanie": "pedałkowaty, pedziowaty",
+        "odpowiedź": "queer"
+    },
+    {
+        "pytanie": "tarapaty (idiom)",
+        "odpowiedź": "pickle"
+    },
+    {
+        "pytanie": "wycieńczony",
+        "odpowiedź": "drained"
+    },
+    {
+        "pytanie": "zniesmaczony",
+        "odpowiedź": "disgusted"
+    },
+    {
+        "pytanie": "obleśny",
+        "odpowiedź": "sleazy"
+    }
+]
